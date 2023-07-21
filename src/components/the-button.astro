@@ -1,0 +1,23 @@
+---
+
+---
+
+<button class="the-button">
+    <slot/>
+</button>
+<style lang="scss">
+    @import '../../assets/styles/variables.scss';
+    .the-button{
+     color: $secondary;
+     font-size: 18px;
+     font-weight: 70;
+     padding: 16px 48px;
+     background:rgba($primary, $alpha: 0.8);
+     transition:300ms;
+
+     &:hover{
+        background: rgba($primary, $alpha:1);
+     }
+     
+    }
+</style>
